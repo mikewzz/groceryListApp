@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand">Mike's Grocery List</div>
+    </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a routerLink ="/groceries">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li class="btn-default"><a style="font-weight:700; cursor: pointer;" (click)="onSaveData()">Save Grocery List</a></li>
+          <li class="btn-default fetchButton"><a style="font-weight:700; cursor: pointer;" (click)="onFetchData()">Fetch Grocery List</a></li>
+      </ul>
+  </div>
+</nav>

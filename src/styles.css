@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+.textRed{
+  color: red;
+}
+h1 {
+  margin-top:  0;
+}
+
+.btn-group>.btn:first-child {
+  margin: 5px;
+}
+.btn-info {
+  margin-top:  5px;
+}
+.btn-danger  {
+  margin: 0 5px;
+}
+@media (min-width: 725px) and (max-width: 991px){
+  .btn-info  {
+    margin-top: 0;
+  }
+}
+@media (max-width: 469px) {
+  .btn-danger  {
+    margin: 5px 0;
+  }
+  .btn-info {
+    margin:0;
+  }
+}
+.list-group-item:last-child {
+  margin-bottom: 5px;
+}
+
+.fetchButton {
+  margin-left: 5px; 
+}

@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-xs-6">
+    <h1>{{ grocery.name }}</h1>
+  </div>
+    <div class="col-xs-6 detailButton">
+        <button type="button" class="btn btn-success" (click)="onEditItem()">Edit Details</button>
+        <button type="button" class="btn btn-danger" (click)="onDeleteItem()">Delete Item</button>
+        <button type="button" class="btn btn-info" (click)="onMarkPurchase()">Toggle Purchased</button>
+    </div>
+</div>
+<div class="row">
+  <div class="col-xs-6">
+    {{ grocery.description }}
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h4>Press save to update/create an item, cancel if you changed your mind!</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup] ="groceryForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-success" [disabled]="!groceryForm.valid">Save</button>
+          <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name"
+            class="form-control"
+            formControlName="name">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea type="text"
+            id="description"
+            class="form-control"
+            rows="6"
+            formControlName="description"
+            style="resize: none;"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="purchased">Mark As Purchased
+              <input type="checkbox" id="purchased"
+              class="form-control"
+              formControlName="purchased">
+            </label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
